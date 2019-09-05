@@ -1,43 +1,21 @@
 import { GalacticDate } from './../src/GalacticDate.js';
 
 describe('GalacticDate', function () {
-  let mydate = new GalacticDate(2016, 5, 24, 50, "Mars");
-  let mars = new GalacticDate(1993, 8, 17, 25, "Mars");
+  
+  let mars = new GalacticDate(3, "Mars");
   mars.calculateGalacticAge();
-  let venus = new GalacticDate(1993, 8, 17, 25, "Venus");
+  let venus = new GalacticDate(3, "Venus");
   venus.calculateGalacticAge();
 
-  let jupiter = new GalacticDate(1993, 8, 17, 25, "Jupiter");
+  let jupiter = new GalacticDate(3, "Jupiter");
   jupiter.calculateGalacticAge();
 
-  it('should test whether constructor works', function () {
-    expect(mydate.getFullYear()).toEqual(2016);
-    expect(mydate.getMonth()).toEqual(5);
-    expect(mydate.getDate()).toEqual(24);
-  });
-  it('should test whether helper functions in GalacticDate calculate ages correctly', function () {
-    expect(mydate.getVenusAge()).toEqual(31);
-    expect(mydate.getMarsAge()).toEqual(94);
-    expect(mydate.getJupiterAge()).toEqual(593);
-  });
   it('should test whether calculate galactic age branches to mars', function () {
-    expect(mars.planetAge).toEqual(47);
-  });
-  it('should test whether years left for mars returns correct number', function () {
-    expect(mars.remainPlanetYears).toEqual(119);
-  });
-  it('should test whether calculate galactic age branches to venus', function () {
-    expect(venus.planetAge).toEqual(15.5);
-  });
-  it('should test whether years left for venus returns correct number', function () {
-    expect(venus.remainPlanetYears).toEqual(40);
-  });
- 
-  it('should test whether years left for mercury returns correct number', function () {
-    expect(mercury.remainPlanetYears).toEqual(16);
+    expect(mars.planetAge).toEqual(7.52);
   });
   
-  it('should test whether years left for jupiter returns correct number', function () {
-    expect(jupiter.remainPlanetYears).toEqual(748);
+  it('should test whether calculate galactic age branches to venus', function () {
+    expect(venus.planetAge).toEqual(2.48);
   });
+  
 });

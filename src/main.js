@@ -13,7 +13,7 @@ $(document).ready(function () {
     dateInput.calculateGalacticAge();
 
 
-    $("#solution").append("<li> The date " + (monthInput + 1) + "/" + dayInput + "/" + yearInput + " is a " + dateInput.getWeekday() + "! Your age on Earth is " + ageInput + " , and your age on " + planetInput + " is " + dateInput.planetAge + "</li>");
+    $("#solution").append("<li>  Your age on Earth is " + ageInput + " , and your age on " + planetInput + " is " + dateInput.planetAge + "</li>");
 
     
     });
