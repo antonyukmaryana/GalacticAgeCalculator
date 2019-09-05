@@ -7,12 +7,9 @@ import { GalacticDate } from './GalacticDate';
 $(document).ready(function () {
   $('#date-form').submit(function (event) {
     event.preventDefault();
-    let monthInput = parseInt($('#month').val());
-    let dayInput = parseInt($('#day').val());
-    let yearInput = parseInt($('#year').val());
     let ageInput = parseInt($('#age').val());
     let planetInput = $('#planet').val();
-    let dateInput = new GalacticDate(yearInput, monthInput, dayInput, ageInput, planetInput);
+    let dateInput = new GalacticDate( ageInput, planetInput);
     dateInput.calculateGalacticAge();
 
 
@@ -25,11 +22,6 @@ $(document).ready(function () {
         $("#yearsLeft").html("<div> You have lived an extra " + Math.abs(dateInput.remainPlanetYears) + " years on " + planetInput + ". Congrats!</div>");
       }
 
-
-
-
     });
-
-
   });
 });

@@ -6,8 +6,7 @@ describe('GalacticDate', function () {
   mars.calculateGalacticAge();
   let venus = new GalacticDate(1993, 8, 17, 25, "Venus");
   venus.calculateGalacticAge();
-  let mercury = new GalacticDate(1993, 8, 17, 25, "Mercury");
-  mercury.calculateGalacticAge();
+
   let jupiter = new GalacticDate(1993, 8, 17, 25, "Jupiter");
   jupiter.calculateGalacticAge();
 
