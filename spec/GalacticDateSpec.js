@@ -16,7 +16,6 @@ describe('GalacticDate', function () {
     expect(mydate.getDate()).toEqual(24);
   });
   it('should test whether helper functions in GalacticDate calculate ages correctly', function () {
-    expect(mydate.getMercuryAge()).toEqual(12);
     expect(mydate.getVenusAge()).toEqual(31);
     expect(mydate.getMarsAge()).toEqual(94);
     expect(mydate.getJupiterAge()).toEqual(593);
@@ -33,15 +32,11 @@ describe('GalacticDate', function () {
   it('should test whether years left for venus returns correct number', function () {
     expect(venus.remainPlanetYears).toEqual(40);
   });
-  it('should test whether calculate galactic age branches to mercury', function () {
-    expect(mercury.planetAge).toEqual(6);
-  });
+ 
   it('should test whether years left for mercury returns correct number', function () {
     expect(mercury.remainPlanetYears).toEqual(16);
   });
-  it('should test whether calculate galactic age branches to jupiter', function () {
-    expect(jupiter.planetAge).toEqual(296.5);
-  });
+  
   it('should test whether years left for jupiter returns correct number', function () {
     expect(jupiter.remainPlanetYears).toEqual(748);
   });

@@ -15,10 +15,10 @@
 ## Specs
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
-| User selects Mercury and age, program returns their age in Mercury years | 50 | 12 |
-| User selects Venus and age, program returns their age in Venus years | 50 | 31 |
-| User selects Mars and age, program returns their age in Mars years | 50 | 94 |
-| User selects Jupiter and age, program returns their age in Jupiter years | 50 | 593 |
+
+| User selects Venus and age, program returns their age in Venus years | 3 | 2.48 |
+| User selects Mars and age, program returns their age in Mars years | 3 | 7.52 |
+| User selects Jupiter and age, program returns their age in Jupiter years | 3 | 47.44 |
  
 
 ##Technologies Used
