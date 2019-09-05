@@ -1,6 +1,6 @@
 const webpackConfig = require('./webpack.config.js');
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jquery-3.2.1', 'jasmine'],
@@ -9,8 +9,7 @@ module.exports = function(config) {
       'spec/*spec.js'
     ],
     webpack: webpackConfig,
-    exclude: [
-    ],
+    exclude: [],
     preprocessors: {
       'src/*.js': ['webpack', 'sourcemap'],
       'spec/*spec.js': ['webpack', 'sourcemap']
@@ -31,5 +30,5 @@ module.exports = function(config) {
     browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity
-  })
-}
+  });
+};
