@@ -33,4 +33,17 @@ $ npm install
 
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
+|1.User selects Mercury and age| program returns their age in Mercury years	50|	12
+| ---------------- |:------------:| :--------------:|
+
+|2.User selects Venus and age| program returns their age in Venus years	50|	31
+| ---------------- |:------------:| :--------------:|
+
+3.User selects Mars and age| program returns their age in Mars years	50 |94
+
+|4.User selects Jupiter and age| program returns their age in Jupiter years	50|	593
+
+|5.User clicks on "Show Remaining Years"| program returns remaining years left to live for given planet	Mercury selected| 50
+
+
 
