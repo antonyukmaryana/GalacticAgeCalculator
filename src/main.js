@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { GalacticDate } from './GalacticDate';
+import {GalacticDate} from './GalacticDate';
 
 $(document).ready(function () {
   $('#date-form').submit(function (event) {
@@ -14,8 +14,5 @@ $(document).ready(function () {
 
 
     $("#solution").append("<li>  Your age on Earth is " + ageInput + " , and your age on " + planetInput + " is " + dateInput.planetAge + "</li>");
-
-    
-    });
   });
 });

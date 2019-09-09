@@ -2,23 +2,29 @@
 <html>
 
 <head>
+
     <title>Galactic Age Caclculator</title>
 </head>
 
 <body>
-    <h2>Welcome to Galactic Age Calculator. It was designed to help to calculate Allie's age, a little allien who was left at orphanage,  in Earth years</h2>
-    <label for="planet">If Allie is from:</label>
+<h2>Welcome to Galactic Age Calculator. It was designed to help to calculate Allie's age, a little allien who was left
+    at orphanage, in Earth years</h2>
+<form id="date-form">
+    <label for="age">If Allie's age :</label>
+    <input id="age" type="number">
+
+    <label for="planet">and she is from :</label>
     <select class="form-control" id="planet">
         <option value="Venus">Venus</option>
         <option value="Mars">Mars</option>
         <option value="Jupiter">Jupiter</option>
-<label for="age">and she is :</label>
-    <input id="age" type="number">
-    
+
+
     </select>
     <button type="submit">Submit</button>
-</form>
 
+</form>
+<div id="solution"></div>
 </body>
 
 </html>
